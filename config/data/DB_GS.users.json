@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "65e2b02fc4dabd3fee98c439"
+  },
+  "username": "FelixDiomedes",
+  "email": "felixdio@gmail.com",
+  "password": "$2a$10$15ygYtK7exZtq2O7LWj5r.IMvM/q01y6.tSbrBILYlbrSkRflsbxG",
+  "estado": true,
+  "google": true,
+  "__v": 0
+}]
