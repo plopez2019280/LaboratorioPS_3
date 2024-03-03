@@ -32,14 +32,6 @@ export const usuariosPost = async(req, res) => {
     });
 }
 
-export const getUsuarioById = async(req, res) => {
-    const { id } = req.params;
-    const usuario = await User.findOne({ _id: id });
-
-    res.status(200).json({
-        usuario
-    })
-}
 
 export const usuariosPut = async (req, res) => {
     const { id } = req.params;
