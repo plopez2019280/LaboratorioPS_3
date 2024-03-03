@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "65e3d0c1bd822d462b8f807f"
+  },
+  "title": "Muy buenas wapisimos",
+  "category": "salute",
+  "description": "Introduccion a karmaland",
+  "estado": false,
+  "google": true,
+  "__v": 0
+}]
