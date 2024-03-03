@@ -1,0 +1,90 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Comentarios",
+    "dateExported": "2024-03-03T07:57:54.364Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "acefcd47-6744-4e14-a365-949c8779ba4c",
+            "colId": "7f2954be-de4b-4110-84c3-85b43f2cd718",
+            "containerId": "",
+            "name": "ingresarComentario",
+            "url": "localhost:3000/OpinionsManagment/v1/comments/65e419432df510504656e5d0",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T06:49:02.422Z",
+            "modified": "2024-03-03T07:47:35.649Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0MTk0MzJkZjUxMDUwNDY1NmU1ZDAiLCJpYXQiOjE3MDk0NTIwMDksImV4cCI6MTcwOTQ1NTYwOX0.ldvv5FpeYYt_0ZCsf-8mNah3dJA7zAi2J4iHgBgiVoQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"descriptionComment\": \"xdd\",\n  \"userName\": \"FelixDiomedes\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "63bff063-1a9b-444b-aa34-6bab6dd23340",
+            "colId": "7f2954be-de4b-4110-84c3-85b43f2cd718",
+            "containerId": "",
+            "name": "listarComentarios",
+            "url": "localhost:3000/OpinionsManagment/v1/comments",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-03T07:38:52.251Z",
+            "modified": "2024-03-03T07:39:09.320Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "66afe068-f768-490a-b9ea-87564de8d489",
+            "colId": "7f2954be-de4b-4110-84c3-85b43f2cd718",
+            "containerId": "",
+            "name": "editarComentario",
+            "url": "localhost:3000/OpinionsManagment/v1/comments/65e42b1787145c75a924f29a",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-03T07:41:35.398Z",
+            "modified": "2024-03-03T07:56:48.264Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0MTk0MzJkZjUxMDUwNDY1NmU1ZDAiLCJpYXQiOjE3MDk0NTEwNjgsImV4cCI6MTcwOTQ1NDY2OH0.gJkLbbn4yXaDD4YmbBbbjv-ChSXwiJYI7LMun_GYQI0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"descriptionComment\": \"alo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7a0ec5bb-c5e6-4aed-a1f6-6d2d73924815",
+            "colId": "7f2954be-de4b-4110-84c3-85b43f2cd718",
+            "containerId": "",
+            "name": "borrarComentario",
+            "url": "localhost:3000/OpinionsManagment/v1/comments/65e42b1787145c75a924f29a",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-03T07:56:59.977Z",
+            "modified": "2024-03-03T07:57:31.770Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0MTk0MzJkZjUxMDUwNDY1NmU1ZDAiLCJpYXQiOjE3MDk0NTEwNjgsImV4cCI6MTcwOTQ1NDY2OH0.gJkLbbn4yXaDD4YmbBbbjv-ChSXwiJYI7LMun_GYQI0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
