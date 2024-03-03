@@ -1,10 +1,10 @@
 [{
   "_id": {
-    "$oid": "65e2b02fc4dabd3fee98c439"
+    "$oid": "65e419432df510504656e5d0"
   },
   "username": "FelixDiomedes",
-  "email": "felixdio@gmail.com",
-  "password": "$2a$10$15ygYtK7exZtq2O7LWj5r.IMvM/q01y6.tSbrBILYlbrSkRflsbxG",
+  "email": "flipon@gmail.com",
+  "password": "$2a$10$crOOs0Kb64k2KkSzTR8zLOmZaELsC7OLw73Hwf174uh15Bv.2w0Te",
   "estado": true,
   "google": true,
   "__v": 0
