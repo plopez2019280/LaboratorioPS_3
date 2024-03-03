@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "LOGIN",
+    "dateExported": "2024-03-03T06:44:43.261Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2234e259-7c00-4605-8f00-a5b8848c76c2",
+            "colId": "058d18c8-f6e8-413a-a725-c746754f71e1",
+            "containerId": "",
+            "name": "IniciarSesion",
+            "url": "localhost:3000/OpinionsManagment/v1/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-03T04:38:37.219Z",
+            "modified": "2024-03-03T06:38:36.871Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"flipon@gmail.com\",\n  \"password\": \"654321\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
