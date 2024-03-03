@@ -8,6 +8,9 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
+  "keywords": [
+    "ESModule"
+  ],
   "author": "Pedro Jose Lopez Hernandez",
   "license": "MIT",
   "devDependencies": {

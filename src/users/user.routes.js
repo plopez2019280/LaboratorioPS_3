@@ -1,15 +1,7 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import {
-  usuariosGet,
-  usuariosPost,
-  getUsuarioById,
-  usuariosPut,
-} from "./user.controller.js";
-import {
-  existenteEmail,
-  existeUsuarioById,
-} from "../helpers/db-validators.js";
+import { usuariosGet, usuariosPost, getUsuarioById, usuariosPut } from "./user.controller.js";
+import { existenteEmail, existeUsuarioById } from "../helpers/db-validators.js";
 import { validarCampos } from "../middlewares/validarCampos.js";
 
 const router = Router();

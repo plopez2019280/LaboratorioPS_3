@@ -72,7 +72,7 @@ export const usuariosPut = async (req, res) => {
         await User.findByIdAndUpdate(id, resto, { new: true });
 
         res.status(200).json({
-            msg: 'User updated successfully',
+            msg: 'User updated successfully!',
             id,
             nuevoEmail: nuevoEmail || email, 
         });
