@@ -1,4 +1,6 @@
 import User from "../users/user.model.js";
+import Publications from '../publications/publications.model.js'
+
 
 export const existenteEmail = async (email = "") => {
   const existeEmail = await User.findOne({ email });
@@ -11,6 +13,13 @@ export const existeUsuarioById = async (id = "") => {
   const existUser = await User.findById(id);
   if (!existUser) {
     throw new Error(`The ID: ${email} does not exists`);
+  }
+};
+
+export const existePublicationsById = async(id = '') => {
+  const existPublication = await Publications.findById(id);
+  if (!existPublication) {
+      throw new Error(`The ID: ${title} Does not exist`);
   }
 };
 
