@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Publicaciones",
+    "dateExported": "2024-03-03T02:16:03.900Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c4e756dd-d4ed-41cb-a783-3e93ee496d5d",
+            "colId": "f034ed3b-6612-495b-9ffd-99b5a8203c45",
+            "containerId": "",
+            "name": "publicarPublicacion",
+            "url": "localhost:3000/OpinionsManagment/v1/publications",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T01:19:31.764Z",
+            "modified": "2024-03-03T01:56:05.436Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"\",\n  \"category\": \"\",\n  \"description\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c18f06b2-fcd3-4194-9ec8-11ce53eed1ce",
+            "colId": "f034ed3b-6612-495b-9ffd-99b5a8203c45",
+            "containerId": "",
+            "name": "mostrarPublicacion",
+            "url": "localhost:3000/OpinionsManagment/v1/publications",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-03T01:54:10.964Z",
+            "modified": "2024-03-03T01:54:26.363Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "07246e26-a25a-406e-bf68-31da0b128500",
+            "colId": "f034ed3b-6612-495b-9ffd-99b5a8203c45",
+            "containerId": "",
+            "name": "buscarPublicacion",
+            "url": "localhost:3000/OpinionsManagment/v1/publications/65e3d0c1bd822d462b8f807f",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-03T01:55:40.160Z",
+            "modified": "2024-03-03T01:55:50.629Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2eac2ae1-89ae-41c4-849e-05061315cb66",
+            "colId": "f034ed3b-6612-495b-9ffd-99b5a8203c45",
+            "containerId": "",
+            "name": "actualizarPublicacion",
+            "url": "localhost:3000/OpinionsManagment/v1/publications/65e3d0c1bd822d462b8f807f",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-03T01:56:19.980Z",
+            "modified": "2024-03-03T01:57:36.132Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Muy buenas wapisimos\",\n  \"category\": \"salute\",\n  \"description\": \"Introduccion a karmaland\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d0dbbae6-8c33-4006-bf65-fdfa1541fcf1",
+            "colId": "f034ed3b-6612-495b-9ffd-99b5a8203c45",
+            "containerId": "",
+            "name": "eliminarPublicacion",
+            "url": "localhost:3000/OpinionsManagment/v1/publications/65e3d0c1bd822d462b8f807f",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-03T01:59:11.084Z",
+            "modified": "2024-03-03T01:59:25.693Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
