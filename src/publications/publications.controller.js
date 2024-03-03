@@ -1,5 +1,4 @@
 import { response, request } from "express";
-import bcryptjs from 'bcryptjs';
 import Publications from './publications.model.js';
 
 export const publicationsGet = async(req = request, res = response) => {
@@ -13,6 +12,7 @@ export const publicationsGet = async(req = request, res = response) => {
     ]);
 
     res.status(200).json({
+        msg: "-Post list-",
         total,
         publications
     });
@@ -25,6 +25,7 @@ export const publicationsPost = async(req, res) => {
     await publications.save();
 
     res.status(200).json({
+        msg: "-Post uploaded successfully!",
         publications
     });
 }
@@ -34,6 +35,7 @@ export const getPublicationsById = async(req, res) => {
     const publications = await Publications.findOne({ _id: id });
 
     res.status(200).json({
+        msg: "-Successful search!-",
         publications
     })
 }
@@ -47,7 +49,7 @@ export const publicationsPut = async(req, res = response) => {
     const publications = await Publications.findOne({ _id: id });
 
     res.status(200).json({
-        msg: 'Publication updated successfully!',
+        msg: '-Post successfully updated!-',
         publications
     });
 }
@@ -59,5 +61,5 @@ export const publicationsDelete = async(req, res) => {
     const publications = await Publications.findByIdAndUpdate(id, { estado: false });
     const publicationsAutentic = req.publications;
 
-    res.status(200).json({ msg: 'Publication deleted successfully!', publications, publicationsAutentic });
+    res.status(200).json({ msg: '-Post deleted successfully!-', publications, publicationsAutentic });
 }

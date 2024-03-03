@@ -13,6 +13,7 @@ export const usuariosGet = async(req = request, res = response) => {
     ]);
 
     res.status(200).json({
+        msg: "-User List-",
         total,
         usuarios
     });
@@ -28,6 +29,7 @@ export const usuariosPost = async(req, res) => {
     await usuario.save();
 
     res.status(200).json({
+        msg: "-The user has been added successfully!-",
         usuario
     });
 }
@@ -37,6 +39,7 @@ export const getUsuarioById = async(req, res) => {
     const usuario = await User.findOne({ _id: id });
 
     res.status(200).json({
+        msg: "-The user was searched successfully!-",
         usuario
     })
 }
@@ -48,22 +51,22 @@ export const usuariosPut = async (req, res) => {
     try {
         const usuario = await User.findById(id);
         if (!usuario) {
-            return res.status(404).json({ msg: 'User not found' });
+            return res.status(404).json({ msg: '-User not found-' });
         }
 
         if (usuario.email !== email) {
-            return res.status(400).json({ msg: 'The current email does not match with the registered one' });
+            return res.status(400).json({ msg: '-The current email does not match with the registered one-' });
         }
 
         if (password && nuevoPassword) {
             const passwordCorrecto = bcryptjs.compareSync(password, usuario.password);
             if (!passwordCorrecto) {
-                return res.status(400).json({ msg: 'The current password is incorrect.' });
+                return res.status(400).json({ msg: '-The current password is incorrect-' });
             }
             const salt = bcryptjs.genSaltSync();
             resto.password = bcryptjs.hashSync(nuevoPassword, salt);
         } else if (password || nuevoPassword) {
-            return res.status(400).json({ msg: 'Both the current password and the new password must be provided.' });
+            return res.status(400).json({ msg: '-Both the current password and the new password must be provided-' });
         }
 
         if (nuevoEmail) {
@@ -72,7 +75,7 @@ export const usuariosPut = async (req, res) => {
         await User.findByIdAndUpdate(id, resto, { new: true });
 
         res.status(200).json({
-            msg: 'User updated successfully!',
+            msg: '-User updated successfully!-',
             id,
             nuevoEmail: nuevoEmail || email, 
         });
@@ -80,7 +83,7 @@ export const usuariosPut = async (req, res) => {
     } catch (error) {
         console.log(error);
         res.status(500).json({
-            msg: 'Error updating user'
+            msg: '-Error updating user-'
         });
     }
 };
